@@ -44,7 +44,22 @@
                         <a href="destination.html" class="nav-item nav-link">Places</a>
                         <a href="guide.html" class="nav-item nav-link">Guides</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 35px; margin-top:20px;">Sign In/Up</button>
+                        <button class="btn btn-primary btn-block" type="submit" style="height: 35px; margin-top:20px;" onclick="openForm()">Sign In/Up</button>
+                        <!-- The form -->
+                        <div class="form-popup" id="myForm">
+                            <form action="/action_page.php" class="form-container">
+                            <h1>Login</h1>
+                        
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" required>
+                        
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                        
+                            <button type="submit" class="btn">Login</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </nav>
