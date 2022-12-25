@@ -44,9 +44,9 @@
                         <a href="destination.html" class="nav-item nav-link">Places</a>
                         <a href="guide.html" class="nav-item nav-link">Guides</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
-                        <button class="btn btn-primary btn-block" type="submit" style="height: 35px; margin-top:20px;" onclick="openForm()">Sign In/Up</button>
+<!--                         <button class="btn btn-primary btn-block" type="submit" style="height: 35px; margin-top:20px;" onclick="openForm()">Sign In/Up</button> -->
                         <!-- The form -->
-                        <div class="form-popup" id="myForm">
+<!--                         <div class="form-popup" id="myForm">
                             <form action="/action_page.php" class="form-container">
                             <h1>Login</h1>
                         
@@ -59,6 +59,31 @@
                             <button type="submit" class="btn">Login</button>
                             <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                             </form>
+                        </div> -->
+                        <button class="btn btn-primary btn-block" type="submit" style="height: 35px; margin-top:23px;"
+                            onclick="togglePopup()">Sign In/Up</button>
+                        <div class="popup" id="popup-1">
+                            <div class="content">
+
+                                <!--Cancel Button-->
+                                <div class="close-btn" onclick="togglePopup()">
+                                    ×</div>
+
+                                <!--Login Form-->
+                                <h1
+                                    style="color:white; font-weight: 600; padding-top: 20px; text-align: center; font-size: 32px; padding-bottom: 10px;">
+                                    Sign in</h1>
+                                <div class="input-field"><input placeholder="Email" class="validate"></div>
+                                <div class="input-field"><input placeholder="Password" class="validate"></div>
+                                <button class="second-button">Sign in</button>
+                                <p style="color: white; padding: 20px;">Don't have an account? <a style="font-weight: 600; color:
+                                        white;" href="/signup.html">Sign
+                                        Up</a></p>
+
+                                <!--Pop-up Button-->
+                                <!-- <button onclick="togglePopup()" class="first-button">Sign In</button> -->
+
+                            </div>
                         </div>
                     </div>
                 </div>
