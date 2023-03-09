@@ -1,0 +1,101 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: url(image1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.Signup{
+    width: 550px;
+    height : 1435px;
+    margin : auto;
+    background-color: #6faf22;
+    border-radius: 5px;
+}
+
+h1{
+    color: azure;
+    text-align : center;
+    padding-top: 20px;
+
+}
+
+form {
+    width: 500px;
+    margin-left: 20px;
+
+
+}
+
+form label {
+    color:aliceblue;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+form input {
+    width : 100%;
+    padding : 8px;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+}
+form select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+input[type="button"]{
+    
+    width : 100px;
+    height : 40px;
+    margin-top: 30px;
+    border: none;
+    background-color: #ffffff;
+    color: black;
+    font-size : 15px;
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.paragraph1{
+    text-align: center; 
+    color: black;
+    font-size: 15px;
+    
+}
+.button{
+    margin-left:50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 34px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color:#336600;
+    font-size:14px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.button:hover{
+    opacity: .8;
+}
