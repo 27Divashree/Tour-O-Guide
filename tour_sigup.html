@@ -1,105 +1,107 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <title> Sign Up</title>
-        
-        <link rel="stylesheet" href="tour_sigup.css">
-        
-    </head>
+<html lang="en">
 
-    <body> 
-        <div class = "Signup"> 
-            <h1> Sign Up</h1>
-            <form>
-                <label> <b>First Name </b></label>
-                <input type="text" placeholder="">
-                <label> <b>Last Name </b></label>
-                <input type="text" placeholder="">
-                <label><b>Address</b></label>
-                <input type="text" placeholder="">
-                <label for="state"><b>State</b></label>
+<head>
+  <title> Sign Up</title>
 
-       <!--- India states -->
-                    <select id="country-state" name="country-state">
-                    <option value="Others">Please select the state</option>
-                    <option value="AN">Andaman and Nicobar Islands</option>
-                    <option value="DL">Delhi</option>
-                    <option value="GA">Goa</option>
-                    <option value="JK">Jammu and Kashmir</option>
-                    <option value="KA">Karnataka</option>
-                    <option value="MH">Maharashtra</option>
-                    <option value="PB">Punjab</option>
-                    <option value="RJ">Rajasthan</option>
-                    <option value="SK">Sikkim</option>
-                    <option value="TG">Telangana</option>
-                    <option value="WB">West Bengal</option>
-                  </select>
-                  <label for="state"> <b>City</b></label>
-                  <select id="city" name="city">
-                    <option value="">Select City</option>
-                    <option value="Agra">Agra</option>
-                    <option value="Amritsar">Amritsar</option>
-                    <option value="Andaman">Andaman</option>
-                    <option value="Bengaluru">Bengaluru</option>
-                    <option value="Gangtok">Gangtok</option>
-                    <option value="Hyderabad">Hyderabad</option>
-                    <option value="Jaipur">Jaipur</option> 
-                    <option value="Kolkata">Kolkata</option> 
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Nagpur">Nagpur</option>
-                    <option value="New Delhi">New Delhi</option>
-                    <option value="Srinagar">Srinagar</option>
-                  </select>
-                  
-                        <label for="pincode"><b>Pincode</b></label>
-                        <input type="text" placeholder="Enter Pincode" name="pincode" required>
-                  
-                        <label for="phonenumber"><b>Phone Number</b></label>
-                        <input type="text" placeholder="Enter Phone Number" name="phonenumber" required>
-                  
-                        <div class="mb-3">
-                          <label for="formFile" class="form-label"><b>Passport Size Photo</b></label>
-                          <input class="form-control" type="file" id="formFile">
-                        </div>
-                  
-                        <div class="mb-3">
-                          <label for="formFile" class="form-label"><b>Aadhaar Card</b></label>
-                          <input class="form-control" type="file" id="formFile">
-                        </div>
-                  
-                        <label for="phonenumber"><b>Start Date of the tour </b></label>
-                        <input type="date" name="date" id="date" placeholder="Date" required>
+  <link rel="stylesheet" href="tour_sigup.css">
 
-                        <label for="phonenumber"><b>End Date of the tour </b></label>
-                        <input type="date" name="date" id="date" placeholder="Date" required>
-                        
-                        <label for="city"><b>Choose the Preferred City</b></label>
-                        <select id="city" name="city">
-                    <option value="">Select City</option>
-                    <option value="Agra">Agra</option>
-                    <option value="Amritsar">Amritsar</option>
-                    <option value="Andaman">Andaman</option>
-                    <option value="Bengaluru">Bengaluru</option>
-                    <option value="Gangtok">Gangtok</option>
-                    <option value="Hyderabad">Hyderabad</option>
-                    <option value="Jaipur">Jaipur</option> 
-                    <option value="Kolkata">Kolkata</option> 
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Nagpur">Nagpur</option>
-                    <option value="New Delhi">New Delhi</option>
-                    <option value="Srinagar">Srinagar</option>
-                            
-                          </select>
-                       
-                <label> <b>Email </b> Id</label>
-                <input type="email" placeholder="">
-                <label> <b> Password </b></label>
-                <input type="password" placeholder="">
-                <label> <b> Confirm Password</b></label>
-                <input type="password" placeholder="">
-                <input type = "button" value="Submit" class="button">
-            </form>
-        </div>
-        <p class="paragraph1">Already have an account? <a href = "tour_login.html">Login here</a></p>
-    </body>
+</head>
+
+<body>
+  <div class="Signup">
+    <h1> Sign Up</h1>
+    <label> <b>First Name </b></label>
+    <input type="text" id="firstname" placeholder="">
+    <label> <b>Last Name </b></label>
+    <input type="text" id="lastname" placeholder="">
+    <label><b>Address</b></label>
+    <input type="text" placeholder="">
+    <label for="state"><b>State</b></label>
+
+    <!--- India states -->
+    <select id="country-state" name="country-state">
+      <option value="Others">Please select the state</option>
+      <option value="AN">Andaman and Nicobar Islands</option>
+      <option value="DL">Delhi</option>
+      <option value="GA">Goa</option>
+      <option value="JK">Jammu and Kashmir</option>
+      <option value="KA">Karnataka</option>
+      <option value="MH">Maharashtra</option>
+      <option value="PB">Punjab</option>
+      <option value="RJ">Rajasthan</option>
+      <option value="SK">Sikkim</option>
+      <option value="TG">Telangana</option>
+      <option value="WB">West Bengal</option>
+    </select>
+    <label for="state"> <b>City</b></label>
+    <select id="city" name="city">
+      <option value="">Select City</option>
+      <option value="Agra">Agra</option>
+      <option value="Amritsar">Amritsar</option>
+      <option value="Andaman">Andaman</option>
+      <option value="Bengaluru">Bengaluru</option>
+      <option value="Gangtok">Gangtok</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Jaipur">Jaipur</option>
+      <option value="Kolkata">Kolkata</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Nagpur">Nagpur</option>
+      <option value="New Delhi">New Delhi</option>
+      <option value="Srinagar">Srinagar</option>
+    </select>
+
+    <label for="pincode"><b>Pincode</b></label>
+    <input type="text" placeholder="Enter Pincode" name="pincode" required>
+
+    <label for="phonenumber"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Phone Number" name="phonenumber" required>
+
+    <div class="mb-3">
+      <label for="formFile" class="form-label"><b>Passport Size Photo</b></label>
+      <input class="form-control" type="file" id="formFile">
+    </div>
+
+    <div class="mb-3">
+      <label for="formFile" class="form-label"><b>Aadhaar Card</b></label>
+      <input class="form-control" type="file" id="formFile">
+    </div>
+
+    <label for="phonenumber"><b>Start Date of the tour </b></label>
+    <input type="date" name="date" id="date" placeholder="Date" required>
+
+    <label for="phonenumber"><b>End Date of the tour </b></label>
+    <input type="date" name="date" id="date" placeholder="Date" required>
+
+    <label for="city"><b>Choose the Preferred City</b></label>
+    <select id="city" name="city">
+      <option value="">Select City</option>
+      <option value="Agra">Agra</option>
+      <option value="Amritsar">Amritsar</option>
+      <option value="Andaman">Andaman</option>
+      <option value="Bengaluru">Bengaluru</option>
+      <option value="Gangtok">Gangtok</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Jaipur">Jaipur</option>
+      <option value="Kolkata">Kolkata</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Nagpur">Nagpur</option>
+      <option value="New Delhi">New Delhi</option>
+      <option value="Srinagar">Srinagar</option>
+
+    </select>
+
+    <label> <b>Email </b> Id</label>
+    <input type="email" id="email-signup" placeholder="">
+    <label> <b> Password </b></label>
+    <input type="password" id="password-signup" placeholder="">
+    <label> <b> Confirm Password</b></label>
+    <input type="password" id="confirm-password-signup" placeholder="">
+    <input type="button" id="create-acct-btn" value="Submit" class="button">
+    </form>
+  </div>
+  <p class="paragraph1">Already have an account? <a href="tour_login.html">Login here</a></p>
+</body>
+<script src="index-sup.js" type="module"></script>
+
 </html>
