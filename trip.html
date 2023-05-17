@@ -9,16 +9,35 @@
   <title>Create a trip</title>
   <!---Custom CSS File--->
   <link rel="stylesheet" href="css\trip.css" />
+
+  <script language="javascript">
+    var makePath = function(form) {
+      form.action = document.getElementById('s1').value;
+    };
+  </script>
 </head>
 
 <body>
   <section class="container">
     <header>Create a trip</header>
-    <form action="#" class="form">
-      <div class="input-box">
+    <form action="#" class="form" onsubmit = 'makePath(this);'>
+      <!--<div class="input-box">
         <label>Which city to?</label>
         <input type="text" placeholder="Enter full name" required />
-      </div>
+      </div>-->
+        
+        <label>Which city to?</label>
+        <div class="select-box">
+        <select id = "s1">
+            <option hidden>Destination</option>
+            <option value="jaipur.html">Jaipur</option>
+            <option value="hyderabad.html">Hyderabad</option>
+            <option value="mumbai.html">Mumbai</option>
+            <option value="bangalore.html">Bangalore</option>
+            <option value="nagpur.html">Nagpur</option>
+            <option value="delhi.html">New Delhi</option>
+        </select>
+        </div>
 
       <section class="">
         <div class="input-box">
